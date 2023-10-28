@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +13,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  link,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -46,6 +48,13 @@ export default function Project({
               </li>
             ))}
           </ul>
+          <Link href={link} passHref target="_blank">
+            
+              <button className="bg-gray-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-gray-700">
+                Visit GitHub
+              </button>
+           
+          </Link>
         </div>
 
         <Image

@@ -1,10 +1,11 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import animemerch from "@/public/animemerch.png";
+import blogapp from "@/public/blogapp.png";
+import travelapp from "@/public/travel_app.png";
+import employeemgmt from "@/public/employee_mgmt.png";
+import { BiLogoJava } from "react-icons/bi";
+import { SiPowerbi } from "react-icons/si";
+import { AiOutlineConsoleSql } from "react-icons/ai";
 
 export const links = [
   {
@@ -24,8 +25,8 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Certifications",
+    hash: "#certifications",
   },
   {
     name: "Contact",
@@ -33,75 +34,83 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+
+
+export const certificationsData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    title: "Java Programming Beginner to Master",
+    description: "Completed a Java certification from Udemy, equipping me with robust Java programming skills, expertise in Java frameworks, and a problem-solving mindset for innovative software development..",
+    icon: React.createElement(BiLogoJava),
+    date: "2022",
+    link: "https://drive.google.com/file/d/1igT6-BwPswMjbByTP9X5FR4o1vsacjSw/view?pli=1",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "POWERBI",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Earned a Power BI certification from CodeBasic, showcasing my expertise in data visualization, report creation, and data-driven insights, enhancing my ability to make informed business decisions.",
+    icon: React.createElement(SiPowerbi),
+    date: "2023",
+    link: "https://drive.google.com/file/d/18SxMzy15qV4rQ_XRXofpeGjeXAP2rC2k/view",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "SQL",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Completed a SQL certification from CodeBasic, demonstrating proficiency in database management, SQL queries, and data manipulation techniques for informed decision-making and efficient data-driven solutions.",
+    icon: React.createElement(AiOutlineConsoleSql),
+    date: "2023",
+    link: "https://drive.google.com/file/d/18RsXzgUsnvxzs_MLV-NwEEPO59qbLp-L/view",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Blog",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Developed a  blog application using a modern tech stack that includes Next.js, React,and MongoDB as the database, with Prisma serving as the ORM layer.",
+    tags: ["React", "Next.js", "Prisma", "MongoDB", "Context API"],
+    imageUrl: blogapp,
+    link: "https://github.com/Abhishekjain5820/Blog-app",
   },
   {
-    title: "rmtDev",
+    title: "AnimeMerch",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "I worked as a full-stack developer on this  project created backend API's for fast data fetching and implemented features of Ecommerce ",
+    tags: ["React", "MongoDB", "Express", "NodeJs"],
+    imageUrl: animemerch,
+    link: "https://github.com/Abhishekjain5820/ecommerce",
   },
   {
-    title: "Word Analytics",
+    title: "Travel App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Designed an Travel aplication using Next.js and React,enhanced by Tailwind CSS design. Plan trips, discover destinations, and craft unforgettable travel experiences..",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind"],
+    imageUrl: travelapp,
+    link: "https://github.com/Abhishekjain5820/Travel-app",
+  },
+  {
+    title: "Employee Management",
+    description:
+      "Designed an Employee management system using Reactjs and developed the REST API using Spring boot  ",
+    tags: ["Spring Boot", "Reactjs", "React-Bootstrap"],
+    imageUrl: employeemgmt,
+    link: "https://github.com/Abhishekjain5820/React-Spring-Boot-Project",
   },
 ] as const;
 
 export const skillsData = [
   "HTML",
   "CSS",
+  "Tailwind",
+  "Framer Motion",
   "JavaScript",
-  "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
+  "Node.js",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "MongoDB",
+  "SQL",
+  "Git",
+  "Spring Boot",
+  "PowerBI",
 ] as const;
